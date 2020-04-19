@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap");
+
+$primary-color: #673090;
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.h {
+  &--title {
+    @include respond-to("screen-xs") {
+      font-size: 20px;
+    }
+
+    @include respond-to("screen-sm") {
+      font-size: 24px;
+    }
+
+    @include respond-to("screen-md") {
+      font-size: 32px;
+    }
+  }
+}
+
+.p {
+  &--content {
+    @include respond-to("screen-xs") {
+      font-size: 14px;
+    }
+
+    @include respond-to("screen-sm") {
+      font-size: 16px;
+    }
+
+    @include respond-to("screen-md") {
+      font-size: 18px;
+    }
+
+    &__banner {
+      line-height: 30px;
+
+      &--property {
+        font-weight: 300;
+      }
+
+      @include respond-to("screen-xs") {
+        line-height: 20px;
+        font-size: 14px;
+      }
+
+      @include respond-to("screen-sm") {
+        line-height: 20px;
+        font-size: 14px;
+      }
+
+      @include respond-to("screen-md") {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.h--footer {
+  font-size: 18px;
+
+  @include respond-to("screen-xs") {
+    font-size: 16px;
+  }
+}
+
+.p--footer {
+  font-size: 14px;
+
+  @include respond-to("screen-xs") {
+    font-size: 12px;
+  }
+}

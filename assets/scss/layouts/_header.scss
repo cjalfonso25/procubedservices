@@ -1,0 +1,49 @@
+header {
+  position: relative;
+  z-index: 1020;
+
+  .navbar {
+    background-color: transparent;
+
+    .navbar-brand {
+      img {
+        @include respond-to("screen-xs") {
+          max-width: 150px;
+        }
+      }
+    }
+
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: white;
+          font-size: 14px;
+
+          &:hover {
+            color: #009fe3;
+          }
+
+          @include respond-to("screen-xs") {
+            font-size: 14px;
+          }
+
+          @include respond-to("screen-sm") {
+            font-size: 16px;
+          }
+
+          @include respond-to("screen-md") {
+            width: fit-content;
+            text-align: center;
+            font-size: 18px;
+          }
+        }
+      }
+
+      .active {
+        & > .nav-link {
+          color: #009fe3;
+        }
+      }
+    }
+  }
+}

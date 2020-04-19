@@ -1,0 +1,36 @@
+.blogs-banner {
+  padding: 240px 0 48px 0;
+  margin-top: -92px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/header/header_02.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.blogs-list {
+  padding: 48px 0;
+
+  .blog {
+    display: flex;
+    margin-top: 24px;
+
+    .blog-img {
+      margin-right: 24px;
+
+      img {
+        max-width: 300px;
+      }
+    }
+
+    .blog-content {
+      .blog-title {
+        color: #009fe3;
+      }
+
+      .blog-summary {
+        color: rgb(148, 148, 148);
+        font-size: 14px;
+      }
+    }
+  }
+}

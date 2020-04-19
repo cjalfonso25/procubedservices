@@ -1,0 +1,165 @@
+.investing-banner {
+  padding: 240px 0 48px 0;
+  margin-top: -92px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/header/header_01.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.investing-what-we-do {
+  padding: 48px 0;
+
+  .category {
+    display: flex;
+    margin-top: 16px;
+
+    .icon {
+      i {
+        margin-right: 16px;
+        width: 30px;
+        height: 30px;
+        color: $primary-color;
+        font-size: 34px;
+      }
+    }
+
+    .content {
+      text-align: justify;
+    }
+  }
+}
+
+.investing-img {
+  .invest-img {
+    height: 400px;
+
+    @include respond-to("screen-xs") {
+      height: 200px;
+    }
+
+    @include respond-to("screen-sm") {
+      height: 250px;
+    }
+
+    @include respond-to("screen-md") {
+      height: 300px;
+    }
+  }
+
+  .left-img {
+    background: url("../img/investing/photo-of-men-sitting-beside-wooden-table-3182806.jpg");
+    background-size: cover;
+  }
+
+  .right-img {
+    background: url("../img/investing/smiling-woman-leaning-on-table-1181422.jpg");
+    background-size: cover;
+  }
+}
+
+.investing-portfolio {
+  padding: 48px 0;
+
+  .card {
+    width: 100%;
+    height: 100%;
+
+    .card-img-top {
+      height: 150px;
+
+      @include respond-to("screen-sm") {
+        height: 120px;
+      }
+    }
+
+    .card-body {
+      @include respond-to("screen-sm") {
+        padding: 8px;
+      }
+      .card-text {
+        @include respond-to("screen-sm") {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .list-group {
+      .list-group-item {
+        display: flex;
+        justify-content: space-between;
+
+        @include respond-to("screen-sm") {
+          padding: 4px 8px;
+        }
+
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .card-link {
+      padding: 8px;
+      text-align: center;
+      color: white;
+      background-color: $primary-color;
+      font-size: 14px;
+    }
+  }
+}
+
+.investing-option {
+  padding: 48px 0;
+  text-align: center;
+  background-color: #eaeaea;
+
+  .p--content {
+    &:after {
+      content: "";
+      display: block;
+      margin: auto;
+      margin-top: 30px;
+      width: 35px;
+      height: 2px;
+      border-top: 2px solid $primary-color;
+    }
+  }
+}
+
+.investing-real-state {
+  .img {
+    padding: 180px 64px;
+    text-align: center;
+    color: white;
+
+    @include respond-to("screen-xs") {
+      padding: 32px 16px;
+    }
+
+    @include respond-to("screen-sm") {
+      padding: 32px 16px;
+    }
+
+    @include respond-to("screen-md") {
+      padding: 64px 32px;
+    }
+  }
+
+  .left-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("../img/investing/car-driving-keys-repair-97075.jpg");
+    background-size: cover;
+  }
+
+  .right-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("../img/investing/close-up-of-human-hand-327540.jpg");
+    background-size: cover;
+  }
+
+  .real-state-btn {
+    background-color: transparent !important;
+    border: 1px solid white;
+  }
+}

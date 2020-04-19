@@ -1,0 +1,231 @@
+.home-banner {
+  padding: 48px 0;
+  margin-top: -92px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/home/group-of-people-sitting-indoors-3184360.jpg");
+  background-size: cover;
+  color: #fff;
+
+  .left-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 0;
+  }
+
+  .social-icon {
+    margin: 0 2px;
+    color: #fff;
+
+    &:hover {
+      color: #009fe3;
+    }
+  }
+
+  .right-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.home-projects {
+  .projects {
+    &--left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 64px !important;
+      color: #fff;
+      background: linear-gradient(
+          rgba(103, 48, 144, 0.8),
+          rgba(103, 48, 144, 0.8)
+        ),
+        url("../img/home/people-having-pizza-during-break-time-3184342.jpg");
+      background-size: cover;
+
+      .project--content {
+        &:before {
+          content: "";
+          display: block;
+          margin-bottom: 20px;
+          width: 35px;
+          height: 2px;
+          border-top: 2px solid #fff;
+        }
+      }
+
+      @include respond-to("screen-xs") {
+        padding: 32px 16px !important;
+      }
+
+      @include respond-to("screen-sm") {
+        padding: 16px !important;
+      }
+
+      @include respond-to("screen-md") {
+        padding: 32px !important;
+      }
+    }
+
+    &--right {
+      &__top {
+        padding: 80px 64px !important;
+
+        .project--content {
+          &:before {
+            content: "";
+            display: block;
+            margin-bottom: 20px;
+            width: 35px;
+            height: 2px;
+            border-top: 2px solid $primary-color;
+          }
+        }
+
+        @include respond-to("screen-xs") {
+          padding: 32px 16px !important;
+        }
+
+        @include respond-to("screen-sm") {
+          padding: 64px 16px !important;
+        }
+
+        @include respond-to("screen-md") {
+          padding: 64px 32px !important;
+        }
+      }
+
+      &__bottom {
+        .img {
+          &__1 {
+            width: 100%;
+            height: 250px;
+            background: url("../img/home/people-discuss-about-graphs-and-rates-3184292.jpg");
+            background-size: cover;
+          }
+
+          &__2 {
+            width: 100%;
+            height: 250px;
+            background: url("../img/home/woman-sharing-her-presentation-with-her-colleagues-3153198.jpg");
+            background-size: cover;
+          }
+
+          &__3 {
+            width: 100%;
+            height: 250px;
+            background: url("../img/home/group-of-people-sitting-indoors-3184360.jpg");
+            background-size: cover;
+          }
+
+          &__4 {
+            width: 100%;
+            height: 250px;
+            background: url("../img/home/photo-of-people-doing-handshakes-3183197.jpg");
+            background-size: cover;
+          }
+
+          @include respond-to("screen-xs") {
+            height: 180px;
+          }
+
+          @include respond-to("screen-sm") {
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.home-values {
+  padding: 48px 0;
+  text-align: center;
+
+  .values--title {
+    &:before {
+      content: "";
+      display: block;
+      margin: auto;
+      margin-bottom: 10px;
+      width: 35px;
+      height: 2px;
+      border-top: 2px solid $primary-color;
+    }
+  }
+}
+
+.home-testimonials {
+  padding: 48px 0;
+  background-color: #eaeaea;
+
+  .testimonials--title {
+    text-align: center;
+
+    &:before {
+      content: "";
+      display: block;
+      margin: auto;
+      margin-bottom: 10px;
+      width: 35px;
+      height: 2px;
+      border-top: 2px solid $primary-color;
+    }
+  }
+
+  .testimonial {
+    .message {
+      position: relative;
+      padding: 32px;
+      margin: auto;
+      margin-bottom: 25px;
+      width: 60%;
+      text-align: center;
+      background-color: #01a1e1;
+      color: white;
+      border-radius: 20px;
+
+      &:after {
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 20px 18px 0 18px;
+        border-color: #01a1e1 transparent transparent transparent;
+        position: absolute;
+        bottom: -20px;
+        right: 35px;
+      }
+
+      @include respond-to("screen-xs") {
+        width: 95%;
+      }
+
+      @include respond-to("screen-sm") {
+        width: 80%;
+      }
+    }
+
+    .user {
+      margin: auto;
+      width: 60%;
+      text-align: right;
+      font-weight: 700;
+
+      @include respond-to("screen-xs") {
+        width: 95%;
+      }
+
+      @include respond-to("screen-sm") {
+        width: 80%;
+      }
+    }
+  }
+}

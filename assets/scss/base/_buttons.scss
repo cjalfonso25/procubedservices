@@ -1,0 +1,42 @@
+.btn-primary {
+  width: 160px;
+  background-color: $primary-color;
+  border: none;
+
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #57287a !important;
+    border: none;
+    outline: none;
+  }
+
+  &:visited {
+    background-color: $primary-color;
+  }
+
+  &:hover {
+    background-color: #451c64;
+  }
+
+  @include respond-to("screen-xs") {
+    font-size: 12px;
+  }
+
+  @include respond-to("screen-md") {
+    font-size: 18px;
+  }
+}
+
+.btn-view {
+  background-color: rgb(26, 26, 26) !important;
+}
+
+.card-link {
+  &:hover {
+    background-color: #451c64 !important;
+  }
+}
